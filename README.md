@@ -15,7 +15,8 @@ On to explaining the files and what is going on.
 -interviewGet.go : This is my first take on part 1 of the interview spec. However, I don't think the solution is logically complete. "
                     While spidering through the EP via UUIDs seems like the right approach, this code skips quite a few of the additonal
                     UUIDs found in the Array items of each customer. I find it hard to believe that some of those UUIDs don't correspond
-                    to other unique, unvisited customers on the endpoint.
+                    to other unique, unvisited customers on the endpoint. Unfortunately, I also noticed my output is showing the same UUID Array
+                    for a long list of the customers in my Customers array.
 
 -interviewGetV2.go : I am convinced this approach is more complete, but it is TERRIBLY inefficient. Clearly, there is a better train of logic--perhaps 
                       a different logical appraoch to traversing the EP--that would get me a solution in a timely manner. Eitehr way, the idea here is 
